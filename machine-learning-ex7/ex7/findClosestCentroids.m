@@ -20,12 +20,9 @@ idx = zeros(size(X,1), 1);
 %
 % Note: You can use a for-loop over the examples to compute this.
 %
-
-
-
-
-
-
+[D, idx] = pdist2(centroids, X, 'euclidean', 'Smallest', 1);
+idx = idx';
+% D2 = pdist2(centroids, X);
 
 % =============================================================
 
